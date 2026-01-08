@@ -1,11 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import appLogo from '/favicon.svg'
-import PWABadge from './PWABadge.tsx'
-import './App.css'
-
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import appLogo from "/favicon.svg";
+import PWABadge from "./PWABadge.tsx";
+// import OAuthLogin from "./oauthLogin.tsx";
+import "./App.css";
+import CoralButton from "./coralButton.tsx";
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -26,12 +27,10 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
       <PWABadge />
+      <CoralButton />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
